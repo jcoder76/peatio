@@ -38,7 +38,7 @@ gem 'bootstrap', '~> 4.1.1'
 gem 'font-awesome-sass', '~> 4.7.0'
 gem 'rbtree', '~> 0.4.2'
 gem 'liability-proof', '0.0.9', require: false
-gem 'grape', '~> 1.0.3'
+gem 'grape', '~> 1.1.0'
 gem 'grape-entity', '~> 0.7.1'
 gem 'grape-swagger', '~> 0.28.0'
 gem 'grape-swagger-ui', '~> 2.2.8'
