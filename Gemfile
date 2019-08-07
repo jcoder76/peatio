@@ -34,7 +34,7 @@ gem 'coffee-rails', '~> 4.2.2'
 gem 'uglifier', '~> 4.1.10'
 gem 'jquery-rails', '~> 4.3.3'
 gem 'angularjs-rails', '~> 1.3.15'
-gem 'bootstrap', '~> 4.1.1'
+gem 'bootstrap', '~> 4.3.1'
 gem 'font-awesome-sass', '~> 4.7.0'
 gem 'rbtree', '~> 0.4.2'
 gem 'liability-proof', '0.0.9', require: false
