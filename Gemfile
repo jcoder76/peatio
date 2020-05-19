@@ -4,8 +4,8 @@
 source 'https://rubygems.org'
 git_source(:github) { |repo_slug| "https://github.com/#{repo_slug}" }
 
-gem 'rails', '~> 4.2.10'
-gem 'rails-i18n', '~> 4.0.9'
+gem 'rails', '~> 5.2.4', '>= 5.2.4.3'
+gem 'rails-i18n', '~> 5.0.0'
 gem 'puma', '~> 3.11.4'
 gem 'mysql2', '~> 0.4.10'
 gem 'redis-rails', '~> 5.0.2'
@@ -23,7 +23,7 @@ gem 'cancancan', '~> 2.2.0'
 gem 'enumerize', '~> 2.2.2'
 gem 'datagrid', '~> 1.5.8'
 gem 'kaminari', '~> 1.1.1'
-gem 'paper_trail', '~> 3.0.9'
+gem 'paper_trail', '~> 4.0.0'
 gem 'rails-observers', '~> 0.1.5'
 gem 'gon', '~> 5.2.3'
 gem 'pusher', '~> 1.3.1'
@@ -67,16 +67,16 @@ gem 'scout_apm', '~> 2.4', require: false
 group :development, :test do
   gem 'faker',        '~> 1.8'
   gem 'pry-byebug',   '~> 3.6'
-  gem 'quiet_assets', '~> 1.1'
+  gem 'quiet_assets', '~> 1.1', '>= 1.1.0'
 end
 
 group :development do
-  gem 'annotate', '~> 2.7'
+  gem 'annotate', '~> 2.7', '>= 2.7.3'
   gem 'ruby-prof', '~> 0.17.0', require: false
 end
 
 group :test do
-  gem 'rspec-rails',         '~> 3.7'
+  gem 'rspec-rails', '~> 3.7', '>= 3.7.2'
   gem 'rspec-retry',         '~> 0.5'
   gem 'capybara',            '~> 2.17'
   gem 'selenium-webdriver',  '~> 3.8'
@@ -85,7 +85,7 @@ group :test do
   gem 'webmock',             '~> 3.3'
   gem 'database_cleaner',    '~> 1.6'
   gem 'mocha',               '~> 1.4', require: false
-  gem 'factory_bot_rails',   '~> 4.8'
+  gem 'factory_bot_rails', '~> 4.8', '>= 4.8.2'
   gem 'timecop',             '~> 0.9'
   gem 'bunny-mock', '~> 1.7.0'
   gem 'em-spec', '~> 0.2.7', require: false
