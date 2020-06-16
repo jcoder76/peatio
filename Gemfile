@@ -4,8 +4,8 @@
 source 'https://rubygems.org'
 git_source(:github) { |repo_slug| "https://github.com/#{repo_slug}" }
 
-gem 'rails', '~> 4.2.10'
-gem 'rails-i18n', '~> 4.0.9'
+gem 'rails', '~> 5.0.0'
+gem 'rails-i18n', '~> 5.0.0'
 gem 'puma', '~> 3.11.4'
 gem 'mysql2', '~> 0.4.10'
 gem 'redis-rails', '~> 5.0.2'
@@ -32,7 +32,7 @@ gem 'em-websocket', '~> 0.5.1', require: false
 gem 'sass-rails', '~> 5.0.7'
 gem 'coffee-rails', '~> 4.2.2'
 gem 'uglifier', '~> 4.1.10'
-gem 'jquery-rails', '~> 4.3.3'
+gem 'jquery-rails', '~> 4.4.0'
 gem 'angularjs-rails', '~> 1.3.15'
 gem 'bootstrap', '~> 4.1.1'
 gem 'font-awesome-sass', '~> 4.7.0'
@@ -67,7 +67,7 @@ gem 'scout_apm', '~> 2.4', require: false
 group :development, :test do
   gem 'faker',        '~> 1.8'
   gem 'pry-byebug',   '~> 3.6'
-  gem 'quiet_assets', '~> 1.1'
+  gem 'quiet_assets', '~> 1.1', '>= 1.1.0'
 end
 
 group :development do
@@ -76,16 +76,16 @@ group :development do
 end
 
 group :test do
-  gem 'rspec-rails',         '~> 3.7'
+  gem 'rspec-rails', '~> 3.7', '>= 3.7.2'
   gem 'rspec-retry',         '~> 0.5'
-  gem 'capybara',            '~> 2.17'
+  gem 'capybara', '~> 2.18', '>= 2.18.0'
   gem 'selenium-webdriver',  '~> 3.8'
   gem 'chromedriver-helper', '~> 1.1'
-  gem 'rack_session_access', '~> 0.1'
+  gem 'rack_session_access', '~> 0.2', '>= 0.2.0'
   gem 'webmock',             '~> 3.3'
   gem 'database_cleaner',    '~> 1.6'
   gem 'mocha',               '~> 1.4', require: false
-  gem 'factory_bot_rails',   '~> 4.8'
+  gem 'factory_bot_rails', '~> 4.8', '>= 4.8.2'
   gem 'timecop',             '~> 0.9'
   gem 'bunny-mock', '~> 1.7.0'
   gem 'em-spec', '~> 0.2.7', require: false
