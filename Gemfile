@@ -4,8 +4,8 @@
 source 'https://rubygems.org'
 git_source(:github) { |repo_slug| "https://github.com/#{repo_slug}" }
 
-gem 'rails', '~> 4.2.10'
-gem 'rails-i18n', '~> 4.0.9'
+gem 'rails', '~> 5.2.4', '>= 5.2.4.6'
+gem 'rails-i18n', '~> 5.0.0'
 gem 'puma', '~> 3.11.4'
 gem 'mysql2', '~> 0.4.10'
 gem 'redis-rails', '~> 5.0.2'
@@ -76,7 +76,7 @@ group :development do
 end
 
 group :test do
-  gem 'rspec-rails',         '~> 3.7'
+  gem 'rspec-rails', '~> 3.7', '>= 3.7.2'
   gem 'rspec-retry',         '~> 0.5'
   gem 'capybara',            '~> 2.17'
   gem 'selenium-webdriver',  '~> 3.8'
@@ -85,7 +85,7 @@ group :test do
   gem 'webmock',             '~> 3.3'
   gem 'database_cleaner',    '~> 1.6'
   gem 'mocha',               '~> 1.4', require: false
-  gem 'factory_bot_rails',   '~> 4.8'
+  gem 'factory_bot_rails', '~> 4.8', '>= 4.8.2'
   gem 'timecop',             '~> 0.9'
   gem 'bunny-mock', '~> 1.7.0'
   gem 'em-spec', '~> 0.2.7', require: false
