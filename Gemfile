@@ -67,7 +67,7 @@ gem 'scout_apm', '~> 2.4', require: false
 group :development, :test do
   gem 'faker',        '~> 1.8'
   gem 'pry-byebug',   '~> 3.6'
-  gem 'quiet_assets', '~> 1.1'
+  gem 'quiet_assets', '~> 1.1', '>= 1.1.0'
 end
 
 group :development do
@@ -76,16 +76,16 @@ group :development do
 end
 
 group :test do
-  gem 'rspec-rails',         '~> 3.7'
+  gem 'rspec-rails', '~> 3.7', '>= 3.7.2'
   gem 'rspec-retry',         '~> 0.5'
-  gem 'capybara',            '~> 2.17'
+  gem 'capybara', '~> 2.18', '>= 2.18.0'
   gem 'selenium-webdriver',  '~> 3.8'
-  gem 'chromedriver-helper', '~> 1.1'
+  gem 'chromedriver-helper', '~> 1.2', '>= 1.2.0'
   gem 'rack_session_access', '~> 0.1'
   gem 'webmock',             '~> 3.3'
   gem 'database_cleaner',    '~> 1.6'
   gem 'mocha',               '~> 1.4', require: false
-  gem 'factory_bot_rails',   '~> 4.8'
+  gem 'factory_bot_rails', '~> 4.8', '>= 4.8.2'
   gem 'timecop',             '~> 0.9'
   gem 'bunny-mock', '~> 1.7.0'
   gem 'em-spec', '~> 0.2.7', require: false
